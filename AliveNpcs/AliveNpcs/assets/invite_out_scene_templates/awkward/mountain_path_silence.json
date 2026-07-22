@@ -1,0 +1,31 @@
+{
+  "templateId": "awkward/mountain_path_silence",
+  "sceneType": "awkward",
+  "title": "Mountain Path Silence",
+  "location": "Mountain",
+  "timeWindow": {
+    "min": 800,
+    "max": 1900
+  },
+  "relationshipGate": "friendship_3_hearts_boundary_safe",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A quiet mountain pause where the NPC admits the silence got odd. Keep the tone gentle, not dramatic.",
+  "scriptTemplate": "continue/34 15/farmer 33 15 2 {{NPC}} 35 15 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 16/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end"
+}

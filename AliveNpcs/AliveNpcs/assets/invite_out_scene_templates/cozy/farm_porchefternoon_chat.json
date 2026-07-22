@@ -1,0 +1,31 @@
+{
+  "templateId": "cozy/farm_porchefternoon_chat",
+  "sceneType": "cozy",
+  "title": "Farm Porch Afternoon Chat",
+  "location": "Farm",
+  "timeWindow": {
+    "min": 1200,
+    "max": 2100
+  },
+  "relationshipGate": "friendship_3_hearts_or_close_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A relaxed farm-side pause after the invitation. The NPC should notice the farmer's day without becoming too sentimental.",
+  "scriptTemplate": "continue/64 15/farmer 64 15 2 {{NPC}} 66 15 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end"
+}
